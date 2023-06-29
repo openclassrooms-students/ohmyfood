@@ -1,0 +1,42 @@
+.hero-banner {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.7rem;
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  &__text {
+    color: $grey-color;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-bottom: 2.7rem;
+  }
+}
+
+.functioning {
+  padding: 5rem 2rem 7rem 2rem;
+  background-color: $white;
+}
+
+.restaurants {
+  padding: 5.4rem 2rem;
+  @extend %flex-ccol;
+
+  @media (min-width: $tablet) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}

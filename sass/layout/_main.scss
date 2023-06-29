@@ -1,12 +1,12 @@
-
 html,
 * {
-//   font-family: "Raleway", sans-serif;
-//   color: var(--text-color);
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: $background-color;
+  font-family: "Roboto", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
 }

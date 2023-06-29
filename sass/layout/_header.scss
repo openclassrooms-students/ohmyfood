@@ -1,0 +1,59 @@
+header {
+  position: relative;
+}
+
+.hearder__logo {
+  margin: auto;
+  @extend %flex-c;
+  background-color: $white;
+  padding: 1.4rem 0;
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+    padding: 3rem 0;
+  }
+
+  img {
+    height: 36px;
+    width: 100%;
+    object-fit: contain;
+
+    @media screen and (min-width: $desktop) {
+      height: 40px;
+    }
+  }
+}
+
+.header__arrow {
+  position: absolute;
+  color: $grey-color;
+  font-size: 2rem;
+  left: 25px;
+  top: 35%;
+  font-weight: 900;
+
+  i {
+    font-size: inherit;
+  }
+}
+
+.location {
+  @extend %flex-c;
+  box-shadow: inset -2px 2px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  background-color: $grey-light-color;
+  gap: 1.7rem;
+  padding: 1.5rem 0;
+
+  input {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    outline-color: $grey-color;
+  }
+
+  i {
+    font-size: 1.4rem;
+    color: $grey-color;
+  }
+}
