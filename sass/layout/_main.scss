@@ -7,6 +7,11 @@ html,
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: $background-color;
+  background-color: $white;
   color: $text-color;
+}
+
+.container{
+  max-width: 1080px;
+  margin: auto;
 }

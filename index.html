@@ -18,8 +18,8 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;&family=Shrikhand&display=swap"
+     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Shrikhand&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div class="loader">
+    <div class="loader">
       <span>O</span>
       <span>h</span>
       <span>m</span>
@@ -36,7 +36,7 @@
       <span>o</span>
       <span>o</span>
       <span>d</span>
-    </div> -->
+    </div>
 
     <header class="header">
       <figure class="hearder__logo">
@@ -63,7 +63,7 @@
         <button class="button-gradient">Explorer nos restaurants</button>
       </section>
 
-      <section class="functioning">
+      <section class="functioning container">
         <h2 class="subtitle-home">Fonctionnement</h2>
         <ol class="functioning__steps">
           <li class="functioning__step">
@@ -83,203 +83,173 @@
         </ol>
       </section>
 
-      <section class="restaurants">
-        <h2 class="subtitle-home">Restaurants</h2>
-        <article class="card-container">
-          <a href="./la-palette-du-gout.html" class="card">
-            <span class="badge">Nouveau</span>
-            <figure class="card__img">
-              <img
-                src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="photo de La palette du goût"
-              />
-            </figure>
-            <div class="card__content">
-              <div class="card__content__info">
-                <h3 class="card__content__info__title">La palette du goût</h3>
-                <address class="card__content__info__place">
-                  Ménilmontant
-                </address>
-              </div>
-              <svg
-                class="like"
-                width="23"
-                height="23"
-                viewBox="0 0 23 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    id="Vector"
-                    d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
-                    stroke="#101010"
+      <section class="section-restaurants">
+        <svg width="0" height="0">
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+              x1="11.5"
+              y1="-5.45973"
+              x2="3.93419"
+              y2="27.9927"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset stop-color="#9356DC" />
+              <stop offset="1" stop-color="#FF79DA" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="container">
+          <h2 class="subtitle-home">Restaurants</h2>
+          <div class="restaurants">
+            <article class="card-container">
+              <a href="./la-palette-du-gout.html" class="card">
+                <span class="badge">Nouveau</span>
+                <figure class="card__img">
+                  <img
+                    src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="photo de La palette du goût"
                   />
-                </g>
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_25368_712"
-                    x1="11.5"
-                    y1="-5.45973"
-                    x2="3.93419"
-                    y2="27.9927"
-                    gradientUnits="userSpaceOnUse"
+                </figure>
+                <div class="card__content">
+                  <div class="card__content__info">
+                    <h3 class="card__content__info__title">
+                      La palette du goût
+                    </h3>
+                    <address class="card__content__info__place">
+                      Ménilmontant
+                    </address>
+                  </div>
+                  <svg
+                    class="like"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <stop stop-color="#9356DC" />
-                    <stop offset="1" stop-color="#FF79DA" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-        </article>
-        <article class="card-container">
-          <a href="./la-palette-du-gout.html" class="card">
-            <span class="badge">Nouveau</span>
-            <figure class="card__img">
-              <img
-                src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="photo de La palette du goût"
-              />
-            </figure>
-            <div class="card__content">
-              <div class="card__content__info">
-                <h3 class="card__content__info__title">La palette du goût</h3>
-                <address class="card__content__info__place">
-                  Ménilmontant
-                </address>
-              </div>
-              <svg
-                class="like"
-                width="23"
-                height="23"
-                viewBox="0 0 23 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    id="Vector"
-                    d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
-                    stroke="#101010"
+                    <g>
+                      <path
+                        d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
+                        stroke="#101010"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </article>
+            <article class="card-container">
+              <a href="./la-note-enchantee.html" class="card">
+                <span class="badge">Nouveau</span>
+                <figure class="card__img">
+                  <img
+                    src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="photo de La note enchantée"
                   />
-                </g>
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_25368_712"
-                    x1="11.5"
-                    y1="-5.45973"
-                    x2="3.93419"
-                    y2="27.9927"
-                    gradientUnits="userSpaceOnUse"
+                </figure>
+                <div class="card__content">
+                  <div class="card__content__info">
+                    <h3 class="card__content__info__title">
+                      La note enchantée
+                    </h3>
+                    <address class="card__content__info__place">
+                      Charonne
+                    </address>
+                  </div>
+                  <svg
+                    class="like"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <stop stop-color="#9356DC" />
-                    <stop offset="1" stop-color="#FF79DA" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-        </article>
-        <article class="card-container">
-          <a href="./la-palette-du-gout.html" class="card">
-            <span class="badge">Nouveau</span>
-            <figure class="card__img">
-              <img
-                src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="photo de La palette du goût"
-              />
-            </figure>
-            <div class="card__content">
-              <div class="card__content__info">
-                <h3 class="card__content__info__title">La palette du goût</h3>
-                <address class="card__content__info__place">
-                  Ménilmontant
-                </address>
-              </div>
-              <svg
-                class="like"
-                width="23"
-                height="23"
-                viewBox="0 0 23 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    id="Vector"
-                    d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
-                    stroke="#101010"
+                    <g>
+                      <path
+                        d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
+                        stroke="#101010"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </article>
+            <article class="card-container">
+              <a href="./a-la-francaise.html" class="card">
+                <span class="badge">Nouveau</span>
+                <figure class="card__img">
+                  <img
+                    src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="photo de À la française"
                   />
-                </g>
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_25368_712"
-                    x1="11.5"
-                    y1="-5.45973"
-                    x2="3.93419"
-                    y2="27.9927"
-                    gradientUnits="userSpaceOnUse"
+                </figure>
+                <div class="card__content">
+                  <div class="card__content__info">
+                    <h3 class="card__content__info__title">À la française</h3>
+                    <address class="card__content__info__place">
+                      Cité Rouge
+                    </address>
+                  </div>
+                  <svg
+                    class="like"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <stop stop-color="#9356DC" />
-                    <stop offset="1" stop-color="#FF79DA" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-        </article>
-        <article class="card-container">
-          <a href="./la-palette-du-gout.html" class="card">
-            <span class="badge">Nouveau</span>
-            <figure class="card__img">
-              <img
-                src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="photo de La palette du goût"
-              />
-            </figure>
-            <div class="card__content">
-              <div class="card__content__info">
-                <h3 class="card__content__info__title">La palette du goût</h3>
-                <address class="card__content__info__place">
-                  Ménilmontant
-                </address>
-              </div>
-              <svg
-                class="like"
-                width="23"
-                height="23"
-                viewBox="0 0 23 23"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    id="Vector"
-                    d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
-                    stroke="#101010"
+                    <g>
+                      <path
+                        d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
+                        stroke="#101010"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </article>
+            <article class="card-container">
+              <a href="./le-delice-des-sens.html" class="card">
+                <span class="badge">Nouveau</span>
+                <figure class="card__img">
+                  <img
+                    src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="photo Le délice des sens"
                   />
-                </g>
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_25368_712"
-                    x1="11.5"
-                    y1="-5.45973"
-                    x2="3.93419"
-                    y2="27.9927"
-                    gradientUnits="userSpaceOnUse"
+                </figure>
+                <div class="card__content">
+                  <div class="card__content__info">
+                    <h3 class="card__content__info__title">
+                      Le délice des sens
+                    </h3>
+                    <address class="card__content__info__place">
+                      Folie-Méricourt
+                    </address>
+                  </div>
+                  <svg
+                    class="like"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <stop stop-color="#9356DC" />
-                    <stop offset="1" stop-color="#FF79DA" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-        </article>
+                    <g>
+                      <path
+                        d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
+                        stroke="#101010"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+     <footer class="footer">
       <a href="./index.html" class="footer__logo"> ohmyfood </a>
       <ul class="footer__lists">
         <li class="footer__list">

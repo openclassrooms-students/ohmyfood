@@ -5,12 +5,17 @@
     font-weight: 700;
     color: $white;
     font-size: 1.8rem;
-    font-family: "Shrikhand", sans-serif;
+   font-family: "Shrikhand", "Roboto", sans-serif;
     font-style: italic;
     @media (min-width: $tablet) {
+      margin-left: 6rem;
+    }
+
+    @media (min-width: $desktop) {
       margin-left: 10rem;
     }
   }
+
 
   @media (min-width: $tablet) {
     padding-top: 6.4rem;
@@ -35,7 +40,10 @@
 .footer__list {
   margin-bottom: 0.7rem;
   @media (min-width: $tablet) {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
+  }
+  @media (min-width: $desktop) {
+    margin-right: 4rem;
   }
 }
 .footer__link {

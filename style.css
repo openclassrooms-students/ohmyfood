@@ -20,19 +20,25 @@
 @keyframes wave {
   0% {
     transform: scale(0.5);
-    color: #121212;
-    -webkit-text-stroke: 2px gray;
+    color: #9356DC;
   }
-  20% {
+  30% {
     transform: scale(1);
-    color: pink;
-    -webkit-text-stroke: 3px red;
-    filter: drop-shadow(0 0 1px black) drop-shadow(0 0 1px black) drop-shadow(0 0 3px red) drop-shadow(0 0 5px red) hue-rotate(10turn);
+    filter: drop-shadow(0 0 1px #9356DC) drop-shadow(0 0 1px #FF79DA) drop-shadow(0 0 3px #9356DC) drop-shadow(0 0 5px #9356DC) hue-rotate(10turn);
   }
-  50% {
+  60% {
     transform: scale(0.5);
-    color: #121212;
-    -webkit-text-stroke: 2px gray;
+    color: #9356DC;
+  }
+}
+@keyframes shimmy {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -346,7 +352,7 @@ template {
 
 h1,
 h6 {
-  font-family: Shrikhand, Roboto, sans-serif;
+  font-family: "Shrikhand", "Roboto", sans-serif;
 }
 
 body {
@@ -371,7 +377,7 @@ h3 {
   font-size: 2.4rem;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
@@ -401,8 +407,13 @@ html,
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #F6F6F6;
+  background-color: white;
   color: black;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
 }
 
 header {
@@ -470,10 +481,15 @@ header {
   font-weight: 700;
   color: white;
   font-size: 1.8rem;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", "Roboto", sans-serif;
   font-style: italic;
 }
 @media (min-width: 800px) {
+  .footer__logo {
+    margin-left: 6rem;
+  }
+}
+@media (min-width: 1024px) {
   .footer__logo {
     margin-left: 10rem;
   }
@@ -507,7 +523,12 @@ header {
 }
 @media (min-width: 800px) {
   .footer__list {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__list {
+    margin-right: 4rem;
   }
 }
 
@@ -522,7 +543,7 @@ header {
 }
 
 .loader {
-  animation: disappear 200ms 3s forwards;
+  animation: disappear 0.5s 2s forwards;
   background-color: #F6F6F6;
   z-index: 1000;
   position: fixed;
@@ -541,8 +562,8 @@ header {
   font-size: 6rem;
   font-weight: 600;
   transform: scale(0.5);
-  color: #9356DC;
-  -webkit-text-stroke: 2px #FF79DA;
+  color: #FF79DA;
+  -webkit-text-stroke: 2px #9356DC;
 }
 .loader span:nth-child(1) {
   animation: wave 1s linear infinite 0.125s;
@@ -610,7 +631,7 @@ header {
   transition: fill 0.3s, stroke 0.5s;
 }
 .like:hover path {
-  fill: url(#paint0_linear_25368_712);
+  fill: url(#linear-gradient);
   stroke: none;
 }
 
@@ -686,8 +707,20 @@ header {
   margin: 1.2rem auto;
 }
 .plate:hover .plate__button {
-  visibility: visible;
-  margin-right: 0;
+  width: 20%;
+}
+@media (min-width: 800px) {
+  .plate:hover .plate__button {
+    width: 10%;
+  }
+}
+.plate:hover .plate__content {
+  width: 80%;
+}
+@media (min-width: 800px) {
+  .plate:hover .plate__content {
+    width: 90%;
+  }
 }
 .plate__content {
   width: 100%;
@@ -700,6 +733,7 @@ header {
 .plate__content__info {
   overflow: hidden;
   white-space: nowrap;
+  flex-shrink: 1;
 }
 .plate__content__info__title {
   font-size: 1.8rem;
@@ -707,11 +741,13 @@ header {
   margin: 0 0 0.5rem 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plate__content__info__description {
   margin: 0;
   font-size: 15.043px;
   font-weight: 300;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -725,19 +761,18 @@ header {
 }
 
 .plate__button {
-  margin-right: -6rem;
-  visibility: hidden;
+  width: 0;
   background-color: #99E2D0;
-  width: 5.9rem;
   border-radius: 0 15px 15px 0;
-  transition-duration: 0.5s;
+  transition: width 0.2s cubic-bezier(0.06, 0.55, 0.54, 0.43);
 }
 .plate__button i {
+  width: fit-content;
+  max-width: 100%;
   text-align: center;
   font-size: 2rem;
   color: white;
   background-color: #99E2D0;
-  width: 5.9rem;
 }
 
 /* home card*/
@@ -792,61 +827,18 @@ header {
   font-style: normal;
 }
 
-.hero-banner {
-  margin: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2.7rem;
-}
-.hero-banner__title {
-  font-family: Roboto, sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.hero-banner__text {
-  color: #353535;
-  font-size: 1.8rem;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 1.4rem;
-  margin-bottom: 2.7rem;
-}
-
-.functioning {
-  padding: 5rem 2rem 7rem 2rem;
-  background-color: white;
-}
-
-.restaurants {
-  padding: 5.4rem 2rem;
-}
-@media (min-width: 800px) {
-  .restaurants {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
-  }
-}
-
 .img-banner {
   margin: 0;
-  display: block;
+  height: 275px;
 }
 .img-banner img {
   width: 100%;
   height: 100%;
-  height: 36rem;
   object-fit: cover;
 }
 @media (min-width: 800px) {
-  .img-banner img {
-    height: 26rem;
+  .img-banner {
+    height: 483px;
   }
 }
 
@@ -876,6 +868,60 @@ header {
 
 .menu-item {
   margin: 4rem auto;
+  animation: shimmy 5s both;
+}
+.menu-item:nth-child(1) {
+  animation-delay: 1s;
+}
+.menu-item:nth-child(2) {
+  animation-delay: 2s;
+}
+.menu-item:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.hero-banner {
+  padding: 4rem 2.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+.hero-banner__title {
+  font-family: Roboto, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.hero-banner__text {
+  color: #353535;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1.4rem;
+  margin-bottom: 2.7rem;
+}
+
+.functioning {
+  padding: 5rem 2rem 7rem 2rem;
+  background-color: white;
+}
+
+.section-restaurants {
+  background-color: #F6F6F6;
+  padding: 5.4rem 2rem;
+}
+
+@media (min-width: 800px) {
+  .restaurants {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

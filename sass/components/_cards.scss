@@ -72,8 +72,16 @@
 
   &:hover {
     .plate__button {
-      visibility: visible;
-      margin-right: 0;
+      width: 20%;
+      @media (min-width: $tablet) {
+        width: 10%;
+      }
+    }
+    .plate__content {
+      width: 80%;
+      @media (min-width: $tablet) {
+        width: 90%;
+      }
     }
   }
 
@@ -89,18 +97,21 @@
 .plate__content__info {
   overflow: hidden;
   white-space: nowrap;
+  flex-shrink: 1;
   &__title {
     font-size: 1.8rem;
     font-weight: 500;
     margin: 0 0 0.5rem 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__description {
     margin: 0;
     font-size: 15.043px;
     font-weight: 300;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -115,20 +126,19 @@
 }
 
 .plate__button {
-  margin-right: -6rem;
-  visibility: hidden;
+  width: 0;
   @extend %flex-c;
   background-color: $green-color;
-  width: 5.9rem;
   border-radius: 0 15px 15px 0;
-  transition-duration: 0.5s;
+  transition: width 0.2s cubic-bezier(0.06, 0.55, 0.54, 0.43);
 
   i {
+    width: fit-content;
+    max-width: 100%;
     text-align: center;
     font-size: 2rem;
     color: $white;
     background-color: $green-color;
-    width: 5.9rem;
   }
 }
 

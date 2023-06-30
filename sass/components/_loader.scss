@@ -1,31 +1,29 @@
 .loader {
-  animation: disappear 200ms 3s forwards;
+  animation: disappear 0.5s 2s forwards;
   background-color: $background-color;
   z-index: 1000;
-	position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 600;
+    transform: scale(0.5);
+    color: $secondary-color;
+    -webkit-text-stroke: 2px $primary-color;
 
-    span {
-	display: inline-block;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 6rem;
-	font-weight: 600;
-	transform: scale(.5);
-	color: $primary-color;
-	-webkit-text-stroke: 2px $secondary-color;
-
-	@for $i from 1 through 8 {
-  &:nth-child(#{$i}) {
-    animation: wave 1s linear infinite ($i * 0.125s);
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        animation: wave 1s linear infinite ($i * 0.125s);
+      }
+    }
   }
-}
-
-}
 }
