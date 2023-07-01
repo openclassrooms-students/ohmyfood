@@ -1,48 +1,57 @@
 .button-gradient {
-  cursor: pointer;
-  color: $white;
-  font-size: 1.6rem;
-  font-weight: 500;
-  width: 218px;
-  padding: 1.6rem;
-  background-image: linear-gradient(0deg, $primary-color, $secondary-color);
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: opacity 0.3s cubic-bezier(0.1, 0.7, 0.6, 0.9);
-  @extend %flex-c;
-  margin: auto;
-
-  &:hover {
-    opacity: 0.85;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  }
+    cursor: pointer;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 218px;
+    padding: 1.6rem;
+    background-image: linear-gradient(0deg, $primary-color, $secondary-color);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: opacity 0.3s cubic-bezier(0.1, 0.7, 0.6, 0.9);
+    @extend %flex-c;
+    margin: auto;
+    &:hover {
+        opacity: 0.85;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
 }
 
 .badge {
-  width: 8rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 2px;
-  background: $green-color;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  color: $green-dark-color;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
-  position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
+    width: 8rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 2px;
+    background: $green-color;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $green-dark-color;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
 }
 
-.like {
-  cursor: pointer;
-  path {
-    transition: .4s cubic-bezier(.6,.24,.31,.9);
-  }
-  &:hover {
-    path {
-      fill: url(#linear-gradient);
-      stroke: none;
+.heart-svg {
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        .heart-main path {
+            stroke: none;
+        }
+        .heart-background {
+            animation: fade 0.5s linear both;
+        }
     }
-  }
+}
+
+.heart-background {
+    position: absolute;
+    inset: 0;
+    stroke: none;
+    opacity: 0;
+    background: linear-gradient(0deg, $primary-color, $secondary-color);
+    clip-path: url(#svgPath);
+    overflow: hidden;
 }

@@ -1,245 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le délice des sens - Ohmyfood</title>
 
     <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Shrikhand&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Shrikhand&amp;display=swap" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
-      <a href="index.html" class="header__arrow">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <figure class="hearder__logo">
-        <img src="./images/logo/ohmyfood.png" alt="logo de ohmyfood" />
-      </figure>
+        <a href="index.html" class="header__arrow">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <figure class="hearder__logo">
+            <img src="./images/logo/ohmyfood.png" alt="logo de ohmyfood" />
+        </figure>
     </header>
     <main>
-      <figure class="img-banner">
-        <img
-          src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="photo Le délice des sens"
-        />
-      </figure>
+        <figure class="img-banner">
+            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo Le délice des sens" />
+        </figure>
 
-      <div class="menu container">
-        <svg width="0" height="0">
-          <defs>
-            <linearGradient
-              id="linear-gradient"
-              x1="11.5"
-              y1="-5.45973"
-              x2="3.93419"
-              y2="27.9927"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset stop-color="#9356DC" />
-              <stop offset="1" stop-color="#FF79DA" />
-            </linearGradient>
-          </defs>
+        <div class="menu container">
+            <svg height="0" width="0">
+            <defs>
+                <clipPath id="svgPath">
+                  <path class="fill-path" d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"/>
+                </clipPath>
+            </defs>
         </svg>
-        <div class="menu__title">
-          <h1>Le délice des sens</h1>
-          <svg
-            class="like"
-            width="23"
-            height="23"
-            viewBox="0 0 23 23"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g>
-              <path
-                d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"
-                stroke="#101010"
-              />
-            </g>
-          </svg>
-        </div>
-        <section class="menu-sub">
-          <article class="menu-item">
-            <h3 class="title-menu">Entrées</h3>
-            <article class="plate">
-              <!-- Entrée 1 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">Tartare de thon</h3>
-                  <p class="plate__content__info__description">
-                    Assaisonné au yuzu
-                  </p>
-                </div>
-                <p class="plate__price">25€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-            <article class="plate">
-              <!-- Entrée 2 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">
-                    Bouchée de homard croustillant
-                  </h3>
-                  <p class="plate__content__info__description">
-                    Et sa farandole de petits légumes
-                  </p>
-                </div>
-                <p class="plate__price">35€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-            <article class="plate">
-              <!-- Entrée 3 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">Velouté de cèpes</h3>
-                  <p class="plate__content__info__description">Aux truffes</p>
-                </div>
-                <p class="plate__price">20€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-          </article>
-          <article class="menu-item">
-            <h3 class="title-menu">Plats</h3>
-            <article class="plate">
-              <!-- Plat 1 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">
-                    Poulet rôti aux herbes de Provence
-                  </h3>
-                  <p class="plate__content__info__description">
-                    Et sa crème de truffe
-                  </p>
-                </div>
-                <p class="plate__price">40€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-            <article class="plate">
-              <!-- Plat 2 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">Langouste rôtie</h3>
-                  <p class="plate__content__info__description">
-                    Et ses légumes de saison
-                  </p>
-                </div>
-                <p class="plate__price">35€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-            <article class="plate">
-              <!-- Plat 3 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">
-                    Côte de bœuf Angus
-                  </h3>
-                  <p class="plate__content__info__description">
-                    Et sa purée de panais
-                  </p>
-                </div>
-                <p class="plate__price">44€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-          </article>
-          <article class="menu-item">
-            <h3 class="title-menu">Desserts</h3>
-            <article class="plate">
-              <!-- Dessert 1 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">
-                    Farandole de desserts
-                  </h3>
-                  <p class="plate__content__info__description">
-                    Assortiment de douceurs
-                  </p>
-                </div>
-                <p class="plate__price">18€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-            <article class="plate">
-              <!-- Dessert 2 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">
-                    Crème brûlée à la vanille
-                  </h3>
-                  <p class="plate__content__info__description">
-                    Et sa tuile croustillante
-                  </p>
-                </div>
-                <p class="plate__price">22€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-            <article class="plate">
-              <!-- Dessert 3 -->
-              <div class="plate__content">
-                <div class="plate__content__info">
-                  <h3 class="plate__content__info__title">
-                    Mille-feuille aux fruits rouges
-                  </h3>
-                  <p class="plate__content__info__description">
-                    Et sa crème chantilly
-                  </p>
-                </div>
-                <p class="plate__price">23€</p>
-              </div>
-              <div class="plate__button">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </article>
-          </article>
-        </section>
+            <div class="menu__title">
+                <h1>Le délice des sens</h1>
+                <div class="heart-svg">
+                    <svg class="heart-main" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="fill-path" d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z" stroke="#101010"/>
+        </svg>
+                    <svg class="heart-background" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="fill-path" d="M12.7203 2.40576L12.7206 2.40551C14.7223 0.15233 17.9032 -0.169451 20.024 1.80187C22.5183 4.1243 22.6557 8.32326 20.412 10.8492L20.4119 10.8493L12.0976 20.2148C11.7594 20.5956 11.2369 20.5956 10.8987 20.2148L2.58455 10.8495C0.344816 8.32357 0.482212 4.1245 2.9764 1.80201C5.09737 -0.169649 8.28247 0.152585 10.2797 2.40514L10.2802 2.40576L11.1267 3.35732L11.5003 3.77727L11.8739 3.35732L12.7203 2.40576Z"/>
+        </svg>
 
-        <button class="button-gradient">Commander</button>
-      </div>
+                </div>
+            </div>
+            <section class="menu-sub">
+                <article class="menu-item">
+                    <h3 class="title-menu">Entrées</h3>
+                    <article class="plate">
+                        <!-- Entrée 1 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">Tartare de thon</h3>
+                                <p class="plate__content__info__description">
+                                    Assaisonné au yuzu
+                                </p>
+                            </div>
+                            <p class="plate__price">25€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                    <article class="plate">
+                        <!-- Entrée 2 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">
+                                    Bouchée de homard croustillant
+                                </h3>
+                                <p class="plate__content__info__description">
+                                    Et sa farandole de petits légumes
+                                </p>
+                            </div>
+                            <p class="plate__price">35€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                    <article class="plate">
+                        <!-- Entrée 3 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">Velouté de cèpes</h3>
+                                <p class="plate__content__info__description">Aux truffes</p>
+                            </div>
+                            <p class="plate__price">20€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                </article>
+                <article class="menu-item">
+                    <h3 class="title-menu">Plats</h3>
+                    <article class="plate">
+                        <!-- Plat 1 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">
+                                    Poulet rôti aux herbes de Provence
+                                </h3>
+                                <p class="plate__content__info__description">
+                                    Et sa crème de truffe
+                                </p>
+                            </div>
+                            <p class="plate__price">40€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                    <article class="plate">
+                        <!-- Plat 2 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">Langouste rôtie</h3>
+                                <p class="plate__content__info__description">
+                                    Et ses légumes de saison
+                                </p>
+                            </div>
+                            <p class="plate__price">35€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                    <article class="plate">
+                        <!-- Plat 3 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">
+                                    Côte de bœuf Angus
+                                </h3>
+                                <p class="plate__content__info__description">
+                                    Et sa purée de panais
+                                </p>
+                            </div>
+                            <p class="plate__price">44€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                </article>
+                <article class="menu-item">
+                    <h3 class="title-menu">Desserts</h3>
+                    <article class="plate">
+                        <!-- Dessert 1 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">
+                                    Farandole de desserts
+                                </h3>
+                                <p class="plate__content__info__description">
+                                    Assortiment de douceurs
+                                </p>
+                            </div>
+                            <p class="plate__price">18€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                    <article class="plate">
+                        <!-- Dessert 2 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">
+                                    Crème brûlée à la vanille
+                                </h3>
+                                <p class="plate__content__info__description">
+                                    Et sa tuile croustillante
+                                </p>
+                            </div>
+                            <p class="plate__price">22€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                    <article class="plate">
+                        <!-- Dessert 3 -->
+                        <div class="plate__content">
+                            <div class="plate__content__info">
+                                <h3 class="plate__content__info__title">
+                                    Mille-feuille aux fruits rouges
+                                </h3>
+                                <p class="plate__content__info__description">
+                                    Et sa crème chantilly
+                                </p>
+                            </div>
+                            <p class="plate__price">23€</p>
+                        </div>
+                        <div class="plate__button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                </article>
+            </section>
+
+            <button class="button-gradient">Commander</button>
+        </div>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="footer__logo"> ohmyfood </a>
-      <ul class="footer__lists">
-        <li class="footer__list">
-          <a class="footer__link" href="#"
-            ><i class="footer__icon fas fa-utensils"></i>Proposer un
+        <a href="./index.html" class="footer__logo"> ohmyfood </a>
+        <ul class="footer__lists">
+            <li class="footer__list">
+                <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un
             restaurant</a
           >
         </li>
@@ -251,11 +229,12 @@
         </li>
         <li class="footer__list">
           <a class="footer__link" href="#">Mentions légales</a>
-        </li>
-        <li class="footer__list">
-          <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
-        </li>
-      </ul>
+            </li>
+            <li class="footer__list">
+                <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+        </ul>
     </footer>
-  </body>
+</body>
+
 </html>
